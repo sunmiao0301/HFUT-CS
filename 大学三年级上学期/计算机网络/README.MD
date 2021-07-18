@@ -1,0 +1,2 @@
+computer_net为包文件，导入eclipse里面任意项目下的src路径下即可运行。
+运行时把文件夹中作为接收到的文件2.png和4.png删去，运行client.java即可。
