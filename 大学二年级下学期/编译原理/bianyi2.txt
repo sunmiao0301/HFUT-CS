@@ -1,0 +1,15 @@
+i()+-*/ 
+
+EGTSF
+
+E->TG
+E->+TG|-TG
+G->@
+T->FS
+S->*FS|/FS
+S->@
+F->(E)
+F->i
+end
+
+i+i*i#
