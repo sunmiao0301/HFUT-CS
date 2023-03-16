@@ -1,0 +1,851 @@
+
+*** Running vivado
+    with args -log CPU.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source CPU.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source CPU.tcl -notrace
+Command: synth_design -top CPU -part xc7a35tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 14160 
+WARNING: [Synth 8-1849] concatenation with unsized literal; will interpret as 32 bits [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/extend.v:33]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 443.313 ; gain = 111.164
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'CPU' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/CPU.v:22]
+INFO: [Synth 8-6157] synthesizing module 'PC' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/PC.v:21]
+WARNING: [Synth 8-567] referenced signal 'res' should be on the sensitivity list [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/PC.v:37]
+WARNING: [Synth 8-567] referenced signal 'nextPC' should be on the sensitivity list [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/PC.v:37]
+WARNING: [Synth 8-567] referenced signal 'pc1' should be on the sensitivity list [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/PC.v:44]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (1#1) [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/PC.v:21]
+INFO: [Synth 8-6157] synthesizing module 'Reg' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:21]
+WARNING: [Synth 8-567] referenced signal 'RegDes' should be on the sensitivity list [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:41]
+WARNING: [Synth 8-567] referenced signal 'rt' should be on the sensitivity list [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:41]
+WARNING: [Synth 8-567] referenced signal 'rd' should be on the sensitivity list [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:41]
+WARNING: [Synth 8-567] referenced signal 'register' should be on the sensitivity list [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:41]
+WARNING: [Synth 8-567] referenced signal 'rs' should be on the sensitivity list [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:41]
+WARNING: [Synth 8-567] referenced signal 'MemToReg' should be on the sensitivity list [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:41]
+WARNING: [Synth 8-567] referenced signal 'DataMem' should be on the sensitivity list [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:41]
+WARNING: [Synth 8-567] referenced signal 'DataALU' should be on the sensitivity list [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:41]
+INFO: [Synth 8-6155] done synthesizing module 'Reg' (2#1) [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:21]
+INFO: [Synth 8-6157] synthesizing module 'Delay' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/delay.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Delay' (3#1) [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/delay.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/ALU.v:23]
+WARNING: [Synth 8-567] referenced signal 'ALUOp' should be on the sensitivity list [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/ALU.v:44]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (4#1) [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/ALU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'trans' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/trans.v:23]
+INFO: [Synth 8-226] default block is never used [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/trans.v:34]
+INFO: [Synth 8-226] default block is never used [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/trans.v:44]
+INFO: [Synth 8-6155] done synthesizing module 'trans' (5#1) [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/trans.v:23]
+INFO: [Synth 8-6157] synthesizing module 'DataMEM' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:23]
+WARNING: [Synth 8-6090] variable 'DataOut' is written by both blocking and non-blocking assignments, entire logic could be removed [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:58]
+WARNING: [Synth 8-567] referenced signal 'memory' should be on the sensitivity list [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:43]
+WARNING: [Synth 8-567] referenced signal 'Addr' should be on the sensitivity list [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:43]
+WARNING: [Synth 8-567] referenced signal 'DataIn' should be on the sensitivity list [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:43]
+INFO: [Synth 8-6155] done synthesizing module 'DataMEM' (6#1) [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Extend' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/extend.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Extend' (7#1) [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/extend.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PCAddress' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/PCAddress.v:22]
+WARNING: [Synth 8-567] referenced signal 'PC0' should be on the sensitivity list [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/PCAddress.v:31]
+WARNING: [Synth 8-567] referenced signal 'mid' should be on the sensitivity list [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/PCAddress.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'PCAddress' (8#1) [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/PCAddress.v:22]
+INFO: [Synth 8-6157] synthesizing module 'InsMem' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/InsMem.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'InsMem' (9#1) [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/InsMem.v:23]
+INFO: [Synth 8-6157] synthesizing module 'CU' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/CU.v:23]
+	Parameter IF bound to: 3'b000 
+	Parameter ID bound to: 3'b001 
+	Parameter EXE bound to: 3'b010 
+	Parameter MEM bound to: 3'b011 
+	Parameter WB bound to: 3'b100 
+	Parameter add bound to: 6'b000000 
+	Parameter sub bound to: 6'b000001 
+	Parameter move bound to: 6'b000010 
+	Parameter Or bound to: 6'b000011 
+	Parameter And bound to: 6'b000100 
+	Parameter Xor bound to: 6'b000101 
+	Parameter Nor bound to: 6'b000110 
+	Parameter sll bound to: 6'b001000 
+	Parameter srl bound to: 6'b001001 
+	Parameter slt bound to: 6'b001100 
+	Parameter jr bound to: 6'b010000 
+	Parameter addi bound to: 6'b000001 
+	Parameter ori bound to: 6'b000100 
+	Parameter andi bound to: 6'b000101 
+	Parameter slti bound to: 6'b001000 
+	Parameter sw bound to: 6'b110000 
+	Parameter lw bound to: 6'b110001 
+	Parameter beq bound to: 6'b010000 
+	Parameter bne bound to: 6'b010001 
+	Parameter j bound to: 6'b011000 
+	Parameter halt bound to: 6'b111111 
+INFO: [Synth 8-155] case statement is not full and has no default [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/CU.v:126]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/CU.v:101]
+WARNING: [Synth 8-567] referenced signal 'Opcode' should be on the sensitivity list [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/CU.v:138]
+WARNING: [Synth 8-567] referenced signal 'func' should be on the sensitivity list [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/CU.v:138]
+WARNING: [Synth 8-567] referenced signal 'bcon' should be on the sensitivity list [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/CU.v:138]
+INFO: [Synth 8-6155] done synthesizing module 'CU' (10#1) [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/CU.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'CPU' (11#1) [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/CPU.v:22]
+WARNING: [Synth 8-3331] design PCAddress has unconnected port PC0[27]
+WARNING: [Synth 8-3331] design PCAddress has unconnected port PC0[26]
+WARNING: [Synth 8-3331] design PCAddress has unconnected port PC0[25]
+WARNING: [Synth 8-3331] design PCAddress has unconnected port PC0[24]
+WARNING: [Synth 8-3331] design PCAddress has unconnected port PC0[23]
+WARNING: [Synth 8-3331] design PCAddress has unconnected port PC0[22]
+WARNING: [Synth 8-3331] design PCAddress has unconnected port PC0[21]
+WARNING: [Synth 8-3331] design PCAddress has unconnected port PC0[20]
+WARNING: [Synth 8-3331] design PCAddress has unconnected port PC0[19]
+WARNING: [Synth 8-3331] design PCAddress has unconnected port PC0[18]
+WARNING: [Synth 8-3331] design PCAddress has unconnected port PC0[17]
+WARNING: [Synth 8-3331] design PCAddress has unconnected port PC0[16]
+WARNING: [Synth 8-3331] design PCAddress has unconnected port PC0[15]
+WARNING: [Synth 8-3331] design PCAddress has unconnected port PC0[14]
+WARNING: [Synth 8-3331] design PCAddress has unconnected port PC0[13]
+WARNING: [Synth 8-3331] design PCAddress has unconnected port PC0[12]
+WARNING: [Synth 8-3331] design PCAddress has unconnected port PC0[11]
+WARNING: [Synth 8-3331] design PCAddress has unconnected port PC0[10]
+WARNING: [Synth 8-3331] design PCAddress has unconnected port PC0[9]
+WARNING: [Synth 8-3331] design PCAddress has unconnected port PC0[8]
+WARNING: [Synth 8-3331] design PCAddress has unconnected port PC0[7]
+WARNING: [Synth 8-3331] design PCAddress has unconnected port PC0[6]
+WARNING: [Synth 8-3331] design PCAddress has unconnected port PC0[5]
+WARNING: [Synth 8-3331] design PCAddress has unconnected port PC0[4]
+WARNING: [Synth 8-3331] design PCAddress has unconnected port PC0[3]
+WARNING: [Synth 8-3331] design PCAddress has unconnected port PC0[2]
+WARNING: [Synth 8-3331] design PCAddress has unconnected port PC0[1]
+WARNING: [Synth 8-3331] design PCAddress has unconnected port PC0[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 494.859 ; gain = 162.711
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 494.859 ; gain = 162.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 494.859 ; gain = 162.711
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc]
+WARNING: [Vivado 12-507] No nets matched 'pcAddr_OBUF[0]'. [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc:132]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc:132]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'pcAddr_OBUF[1]'. [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc:133]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc:133]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'pcAddr_OBUF[14]'. [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc:134]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc:134]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'pcAddr_OBUF[16]'. [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc:135]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc:135]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'pcAddr_OBUF[20]'. [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc:136]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc:136]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'pcAddr_OBUF[23]'. [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc:137]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc:137]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'pcAddr_OBUF[25]'. [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc:138]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc:138]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'pcAddr_OBUF[31]'. [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc:139]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc:139]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'pcAddr_OBUF[5]'. [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc:140]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc:140]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'pcAddr_OBUF[4]'. [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc:141]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc:141]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'pcAddr_OBUF[7]'. [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc:142]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc:142]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'pcAddr_OBUF[10]'. [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc:143]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc:143]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'pcAddr_OBUF[11]'. [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc:144]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc:144]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'pcAddr_OBUF[12]'. [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc:145]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc:145]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'pcAddr_OBUF[19]'. [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc:146]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc:146]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'pcAddr_OBUF[24]'. [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc:147]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc:147]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'pcAddr_OBUF[26]'. [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc:148]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc:148]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'pcAddr_OBUF[28]'. [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc:149]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc:149]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'pcAddr_OBUF[27]'. [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc:150]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc:150]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'pcAddr_OBUF[3]'. [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc:151]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc:151]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'pcAddr_OBUF[6]'. [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc:152]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc:152]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'pcAddr_OBUF[18]'. [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc:153]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc:153]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'pcAddr_OBUF[22]'. [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc:154]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc:154]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'pcAddr_OBUF[8]'. [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc:155]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc:155]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'pcAddr_OBUF[2]'. [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc:156]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc:156]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'pcAddr_OBUF[9]'. [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc:157]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc:157]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'pcAddr_OBUF[13]'. [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc:158]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc:158]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'pcAddr_OBUF[15]'. [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc:159]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc:159]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'pcAddr_OBUF[17]'. [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc:160]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc:160]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'pcAddr_OBUF[21]'. [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc:161]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc:161]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'pcAddr_OBUF[29]'. [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc:162]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc:162]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-507] No nets matched 'pcAddr_OBUF[30]'. [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc:163]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc:163]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/CPU_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/CPU_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 832.102 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 832.102 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 832.102 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 832.102 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 832.102 ; gain = 499.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 832.102 ; gain = 499.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 832.102 ; gain = 499.953
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "register_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[16]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[17]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[18]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[19]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[20]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[21]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[22]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[23]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[24]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[25]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[26]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[27]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[28]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[29]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[30]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "register_reg[31]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "PCWre" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "InsMemRead" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "RegRead" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "RegWr" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5587] ROM size for "ALUOp" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "MemToReg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "nextState" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "nextState" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "nextState" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'pc1_reg' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/PC.v:38]
+WARNING: [Synth 8-327] inferring latch for variable 'Read1_reg' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'Read2_reg' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:50]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[0]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[1]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[2]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[3]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[4]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[5]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[6]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[7]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[8]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[9]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[10]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[11]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[12]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[13]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[14]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[15]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[16]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[17]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[18]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[19]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[20]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[21]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[22]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[23]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[24]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[25]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[26]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[27]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[28]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[29]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[30]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[31]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'temp_reg' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v:44]
+WARNING: [Synth 8-327] inferring latch for variable 'DataOut_reg' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[0]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[1]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[2]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[3]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[4]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[5]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[6]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[7]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[8]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[9]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[10]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[11]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[12]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[13]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[14]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[15]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[16]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[17]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[18]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[19]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[20]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[21]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[22]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[23]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[24]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[25]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[26]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[27]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[28]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[29]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[30]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[31]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[32]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[33]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[34]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[35]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[36]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[37]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[38]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[39]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[40]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[41]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[42]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[43]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[44]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[45]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[46]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[47]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[48]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[49]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[50]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[51]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[52]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[53]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[54]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[55]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[56]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[57]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[58]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[59]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[60]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[61]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'memory_reg[62]' [E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v:46]
+INFO: [Common 17-14] Message 'Synth 8-327' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 832.102 ; gain = 499.953
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 3     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 5     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 4     
+	   4 Input      8 Bit        Muxes := 36    
+	   2 Input      8 Bit        Muxes := 62    
+	  69 Input      8 Bit        Muxes := 4     
+	   2 Input      5 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 97    
+	   5 Input      1 Bit        Muxes := 48    
+	   4 Input      1 Bit        Muxes := 16    
+	   3 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module PC 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module Reg 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 32    
+Module Delay 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module trans 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+Module DataMEM 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 36    
+	   2 Input      8 Bit        Muxes := 62    
+	   4 Input      2 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 48    
+	   2 Input      1 Bit        Muxes := 61    
+	   4 Input      1 Bit        Muxes := 16    
+Module Extend 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module InsMem 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 3     
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	  69 Input      8 Bit        Muxes := 4     
+Module CU 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   7 Input      4 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   8 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "p_0_out" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "ALUOp" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-3331] design InsMem has unconnected port addr[31]
+WARNING: [Synth 8-3331] design InsMem has unconnected port addr[30]
+WARNING: [Synth 8-3331] design InsMem has unconnected port addr[29]
+WARNING: [Synth 8-3331] design InsMem has unconnected port addr[28]
+WARNING: [Synth 8-3331] design InsMem has unconnected port addr[27]
+WARNING: [Synth 8-3331] design InsMem has unconnected port addr[26]
+WARNING: [Synth 8-3331] design InsMem has unconnected port addr[25]
+WARNING: [Synth 8-3331] design InsMem has unconnected port addr[24]
+WARNING: [Synth 8-3331] design InsMem has unconnected port addr[23]
+WARNING: [Synth 8-3331] design InsMem has unconnected port addr[22]
+WARNING: [Synth 8-3331] design InsMem has unconnected port addr[21]
+WARNING: [Synth 8-3331] design InsMem has unconnected port addr[20]
+WARNING: [Synth 8-3331] design InsMem has unconnected port addr[19]
+WARNING: [Synth 8-3331] design InsMem has unconnected port addr[18]
+WARNING: [Synth 8-3331] design InsMem has unconnected port addr[17]
+WARNING: [Synth 8-3331] design InsMem has unconnected port addr[16]
+WARNING: [Synth 8-3331] design InsMem has unconnected port addr[15]
+WARNING: [Synth 8-3331] design InsMem has unconnected port addr[14]
+WARNING: [Synth 8-3331] design InsMem has unconnected port addr[13]
+WARNING: [Synth 8-3331] design InsMem has unconnected port addr[12]
+WARNING: [Synth 8-3331] design InsMem has unconnected port addr[11]
+WARNING: [Synth 8-3331] design InsMem has unconnected port addr[10]
+WARNING: [Synth 8-3331] design InsMem has unconnected port addr[9]
+WARNING: [Synth 8-3331] design InsMem has unconnected port addr[8]
+WARNING: [Synth 8-3331] design InsMem has unconnected port addr[7]
+WARNING: [Synth 8-3331] design PC has unconnected port imm[31]
+WARNING: [Synth 8-3331] design PC has unconnected port imm[30]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:04 ; elapsed = 00:01:05 . Memory (MB): peak = 835.488 ; gain = 503.340
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:12 ; elapsed = 00:01:13 . Memory (MB): peak = 835.488 ; gain = 503.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:12 ; elapsed = 00:01:13 . Memory (MB): peak = 837.547 ; gain = 505.398
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][2]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][2]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][3]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][3]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][4]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][4]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][5]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][5]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][6]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][6]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][7]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][7]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][8]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][8]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][9]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][9]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][10]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][10]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][11]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][11]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][12]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][12]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][13]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][13]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][14]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][14]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][16]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][16]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][17]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][17]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][18]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][18]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][19]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][19]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][20]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][20]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][21]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][21]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][22]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][22]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][23]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][23]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][24]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][24]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][25]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][25]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][26]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][26]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][27]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][27]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][28]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][28]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][29]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][29]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][30]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][30]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][31]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][31]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][2]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][2]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][3]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][3]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][4]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][4]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][5]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][5]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][6]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][6]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][7]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][7]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][8]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][8]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][9]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][9]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][10]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][10]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][11]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][11]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][12]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][12]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][13]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][13]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][14]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][14]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][16]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][16]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][17]  is always disabled
+WARNING: [Synth 8-264] enable of latch \reg0/register_reg[0][17]  is always disabled
+INFO: [Common 17-14] Message 'Synth 8-264' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:13 ; elapsed = 00:01:14 . Memory (MB): peak = 931.328 ; gain = 599.180
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:15 ; elapsed = 00:01:16 . Memory (MB): peak = 931.328 ; gain = 599.180
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:15 ; elapsed = 00:01:16 . Memory (MB): peak = 931.328 ; gain = 599.180
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:15 ; elapsed = 00:01:16 . Memory (MB): peak = 931.328 ; gain = 599.180
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:15 ; elapsed = 00:01:16 . Memory (MB): peak = 931.328 ; gain = 599.180
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:15 ; elapsed = 00:01:16 . Memory (MB): peak = 931.328 ; gain = 599.180
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:15 ; elapsed = 00:01:16 . Memory (MB): peak = 931.328 ; gain = 599.180
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |    12|
+|2     |CARRY4 |    46|
+|3     |LUT1   |     3|
+|4     |LUT2   |    90|
+|5     |LUT3   |   523|
+|6     |LUT4   |    91|
+|7     |LUT5   |   255|
+|8     |LUT6   |  1746|
+|9     |MUXF7  |   532|
+|10    |MUXF8  |   128|
+|11    |FDCE   |    40|
+|12    |FDRE   |   181|
+|13    |LD     |  1640|
+|14    |LDC    |    64|
+|15    |IBUF   |     3|
+|16    |OBUF   |    57|
++------+-------+------+
+
+Report Instance Areas: 
++------+-----------+--------+------+
+|      |Instance   |Module  |Cells |
++------+-----------+--------+------+
+|1     |top        |        |  5411|
+|2     |  ADR      |Delay   |    50|
+|3     |  ALUoutDR |Delay_0 |   435|
+|4     |  ALUx0    |trans   |    30|
+|5     |  ALUx1    |trans_1 |    30|
+|6     |  BDR      |Delay_2 |   469|
+|7     |  DBDR     |Delay_3 |    64|
+|8     |  alu      |ALU     |    33|
+|9     |  cu       |CU      |   351|
+|10    |  datamem  |DataMEM |  1472|
+|11    |  insmem   |InsMem  |   279|
+|12    |  pc0      |PC      |   170|
+|13    |  reg0     |Reg     |  1956|
++------+-----------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:15 ; elapsed = 00:01:16 . Memory (MB): peak = 931.328 ; gain = 599.180
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 261 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:06 ; elapsed = 00:01:10 . Memory (MB): peak = 931.328 ; gain = 261.938
+Synthesis Optimization Complete : Time (s): cpu = 00:01:15 ; elapsed = 00:01:16 . Memory (MB): peak = 931.328 ; gain = 599.180
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 2410 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 931.328 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1704 instances were transformed.
+  LD => LDCE: 1640 instances
+  LDC => LDCE: 64 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+89 Infos, 309 Warnings, 32 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:18 ; elapsed = 00:01:19 . Memory (MB): peak = 931.328 ; gain = 612.184
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 931.328 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'E:/vivado/MultiTCPU/MultiTCPU.runs/synth_1/CPU.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file CPU_utilization_synth.rpt -pb CPU_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 26 19:29:13 2020...

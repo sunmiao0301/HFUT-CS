@@ -1,0 +1,18 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../MultiTCPU.srcs/sources_1/new/ALU.v" \
+"../../../../MultiTCPU.srcs/sources_1/new/CU.v" \
+"../../../../MultiTCPU.srcs/sources_1/new/DataMem.v" \
+"../../../../MultiTCPU.srcs/sources_1/new/InsMem.v" \
+"../../../../MultiTCPU.srcs/sources_1/new/PC.v" \
+"../../../../MultiTCPU.srcs/sources_1/new/PCAddress.v" \
+"../../../../MultiTCPU.srcs/sources_1/new/Reg.v" \
+"../../../../MultiTCPU.srcs/sources_1/new/delay.v" \
+"../../../../MultiTCPU.srcs/sources_1/new/extend.v" \
+"../../../../MultiTCPU.srcs/sources_1/new/CPU.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

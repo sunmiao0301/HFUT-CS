@@ -1,0 +1,17 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+E:/vivado/MultiTCPU/MultiTCPU.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+E:/vivado/MultiTCPU/MultiTCPU.srcs/sim_1/new/multiCPU.v,1608944462,verilog,,,,test,,,,,,,,
+E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/ALU.v,1608771698,verilog,,E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/CPU.v,,ALU,,,,,,,,
+E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/CPU.v,1608954574,verilog,,E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/CU.v,,CPU,,,,,,,,
+E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/CU.v,1608800858,verilog,,E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v,,CU,,,,,,,,
+E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/DataMem.v,1608030179,verilog,,E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/InsMem.v,,DataMEM,,,,,,,,
+E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/InsMem.v,1608030682,verilog,,E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/PC.v,,InsMem,,,,,,,,
+E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/PC.v,1608029400,verilog,,E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/PCAddress.v,,PC,,,,,,,,
+E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/PCAddress.v,1607661364,verilog,,E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v,,PCAddress,,,,,,,,
+E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/Reg.v,1608031763,verilog,,E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/delay.v,,Reg,,,,,,,,
+E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/delay.v,1608771157,verilog,,E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/extend.v,,Delay,,,,,,,,
+E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/extend.v,1607676948,verilog,,E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/trans.v,,Extend,,,,,,,,
+E:/vivado/MultiTCPU/MultiTCPU.srcs/sources_1/new/trans.v,1608949929,verilog,,E:/vivado/MultiTCPU/MultiTCPU.srcs/sim_1/new/multiCPU.v,,trans,,,,,,,,

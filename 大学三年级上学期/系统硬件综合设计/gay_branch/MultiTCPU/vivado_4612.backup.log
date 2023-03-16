@@ -1,0 +1,38 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Dec 29 20:49:22 2020
+# Process ID: 4612
+# Current directory: E:/vivado/MultiTCPU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent32648 E:\vivado\MultiTCPU\MultiTCPU.xpr
+# Log file: E:/vivado/MultiTCPU/vivado.log
+# Journal file: E:/vivado/MultiTCPU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/vivado/MultiTCPU/MultiTCPU.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/SoftWare/Vivado/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:08 . Memory (MB): peak = 799.773 ; gain = 180.902
+update_compile_order -fileset sources_1
+open_run synth_1 -name synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xc7a35tcsg324-1
+INFO: [Netlist 29-17] Analyzing 706 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Device 21-403] Loading part xc7a35tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc]
+Finished Parsing XDC File [E:/vivado/MultiTCPU/MultiTCPU.srcs/constrs_1/new/CPU.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1158.656 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:17 ; elapsed = 00:00:10 . Memory (MB): peak = 1225.953 ; gain = 216.617
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Dec 29 20:55:44 2020...
