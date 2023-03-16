@@ -1,1 +1,2 @@
 *.vhdl linguist-detectable=false
+*.v linguist-detectable=false
