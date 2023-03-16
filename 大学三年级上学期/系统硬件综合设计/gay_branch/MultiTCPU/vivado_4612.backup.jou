@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Dec 29 20:49:22 2020
+# Process ID: 4612
+# Current directory: E:/vivado/MultiTCPU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent32648 E:\vivado\MultiTCPU\MultiTCPU.xpr
+# Log file: E:/vivado/MultiTCPU/vivado.log
+# Journal file: E:/vivado/MultiTCPU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/vivado/MultiTCPU/MultiTCPU.xpr
+update_compile_order -fileset sources_1
+open_run synth_1 -name synth_1
